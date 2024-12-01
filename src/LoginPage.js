@@ -42,9 +42,9 @@ function LoginPage() {
 
   return (
     // Outer div with a static grey background and Poppins font
-    <div className=" bg-blur min-h-screen flex items-center justify-center font-poppins">
+    <div className=" bg-blur mx-auto flex items-center justify-center font-poppins">
       {/* Flex container for image and form */}
-      <div className="flex  w-full max-w-4xl p-0 rounded-lg shadow-xl hover:shadow-b-2xl hover:shadow-deepPurple transition-shadow duration-300 ease-in-out">
+      <div className="flex  mx-auto mt-32 mb-9 max-w-4xl p-0 rounded-lg shadow-xl hover:shadow-b-2xl hover:shadow-deepPurple transition-shadow duration-300 ease-in-out">
 
 
         {/* Left side - Image */}
@@ -53,7 +53,7 @@ function LoginPage() {
         </div>
 
         {/* Right side - Login form */}
-        <div className="bg-darkPurple p-8 rounded-r-lg shadow-xl w-full md:w-1/2 flex flex-col justify-between h-full">
+        <div className="bg-darkPurple p-8 rounded-r-lg shadow-xl w-full md:w-1/2 flex flex-col justify-between h-full mx-auto">
           {/* Logo */}
           <div className="flex justify-center mb-6">
             <img src={logo} alt="MagicChain Logo" className="h-12 mb-4" />
@@ -61,7 +61,7 @@ function LoginPage() {
           
           {/* Login Form Title */}
           <h1 className="text-3xl font-bold text-white text-center mb-6">Login</h1>
-
+          <div className="mx-auto">
           {/* Google Login Button Styled with Tailwind */}
           {!authToken && googleLoginLoaded ? (
             <GoogleLogin
@@ -77,12 +77,13 @@ function LoginPage() {
                 <button
                   onClick={renderProps.onClick}
                   disabled={renderProps.disabled}
-                  className="w-full py-3 px-6 bg-lavender text-white rounded-lg shadow-lg hover:bg-darkPurple transition duration-300 focus:outline-none focus:ring-2 focus:ring-lavender focus:ring-opacity-50 text-lg font-semibold"
+                  className="w-full mx-auto bg-lavender text-white rounded-lg shadow-lg hover:bg-darkPurple transition duration-300 focus:outline-none focus:ring-2 focus:ring-lavender focus:ring-opacity-50 text-lg font-semibold"
                 >
                   Login with Google
                 </button>
               )}
             />
+          
           ) : (
             <div className="text-white text-center">
               <p className="text-lg">Authenticated! Welcome back.</p>
@@ -92,8 +93,11 @@ function LoginPage() {
               >
                 Go to Home
               </button>
+              
             </div>
+            
           )}
+          </div>
 
           {/* Forgot Password Link */}
           <div className="mt-6">
