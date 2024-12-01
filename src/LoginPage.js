@@ -38,7 +38,7 @@ function LoginPage() {
 
   return (
     <div style={containerStyle}>
-      <h1>Login</h1>
+      <h1 className="bg-red-900">Login</h1>
       {!authToken ? (
         <GoogleLogin
           onSuccess={handleGoogleLogin}
