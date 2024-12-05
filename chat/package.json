@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "@aptos-labs/ts-sdk": "^1.33.0",
+    "axios": "^1.7.8",
+    "chartjs-node-canvas": "^4.1.6",
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "moralis": "^2.27.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "ts-node": "^10.9.2"
+  }
+}

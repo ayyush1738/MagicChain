@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-color: #B9AEDC; /* Soft Lavender */
+  }
+  50% {
+    background-color: #D1D1D1; /* Soft Grey */
+  }
+  100% {
+    background-color: #B9AEDC; /* Soft Lavender */
+  }
+}
+
+.bg-animated-gradient {
+  animation: gradient-animation 10s ease-in-out infinite;
+}
+
+
+.bg-animated-gradient {
+  animation: gradient-animation 10s ease-in-out infinite;
+}

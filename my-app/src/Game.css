@@ -1,0 +1,154 @@
+/* General Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2d2d2d;
+    color: white;
+  }
+  
+  .game-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 0 auto;
+    width: 90%;
+  }
+  
+  .betting-section {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .bet-input,
+  .mines-selector {
+    margin-bottom: 20px;
+  }
+  
+  .input-container {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  input {
+    background: transparent;
+    color: white;
+    border: none;
+    flex: 1;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  span {
+    margin-left: 10px;
+    color: #ffcc00;
+  }
+  
+  select {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 15px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  button:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+  }
+  
+  .bet-button {
+    background-color: #007bff;
+  }
+  
+  .profit-display {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .profit {
+    background-color: #555;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .profit span {
+    color: #ffcc00;
+  }
+  
+  .random-pick,
+  .cashout-button {
+    margin-top: 10px;
+  }
+  
+  .cashout-button {
+    background-color: #dc3545;
+  }
+  
+  .game-board {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .game-title {
+    font-size: 72px;
+    color: #7fff00;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .tile {
+    width: 80px;
+    height: 80px;
+    background-color: #007bff;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .tile:hover {
+    background-color: #0056b3;
+  }
+  
+  .tile.inactive {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+  
